@@ -15,3 +15,22 @@ function checkSeat(seat) {
 function addSeat(seat){
     seat_List.push(seat);
 }
+
+function priceCount(){
+    const totalSeat = document.getElementById('total-seat').innerText;
+    const totalSeatCount = parseInt(totalSeat);
+
+    const ticketPrice = document.getElementById('ticket-price').innerText;
+    const price = parseInt(ticketPrice);
+
+    const total = price*totalSeatCount;
+
+    document.getElementById('total-price').innerText = total;
+    grandTotal(total);
+}
+
+function grandTotal(grandTotal){
+    document.getElementById('grand-total').innerText = grandTotal;
+}
+
+// function to active coupon apply button
