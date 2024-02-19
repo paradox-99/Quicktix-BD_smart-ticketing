@@ -79,3 +79,23 @@ function checkCouponCode(){
     }
     document.getElementById('grand-total').innerText = price;
 }
+
+
+// enabling Next button
+function enableNextBtn(){
+    const number = document.getElementById('phone').value;
+    console.log(number);
+    const num_length = number.length;
+
+    const totalSeat = document.getElementById('total-seat').innerText;
+    const totalSeatCount = parseInt(totalSeat);
+
+    // button will be enabled if it's length is 4 or greater else button will be disabled
+    if(num_length >= 4 && totalSeatCount >= 1)
+        document.getElementById('next-btn').removeAttribute('disabled');
+    else
+        document.getElementById('next-btn').setAttribute('disabled','true');
+
+}
+
+document.getElementById('phone').addEventListener('keyup', enableNextBtn);

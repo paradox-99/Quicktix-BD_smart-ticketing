@@ -2,6 +2,7 @@
 function seatSelected(seat) {
     const seatValue = document.getElementById(seat).innerText;
     checkSeat(seatValue);
+    enableNextBtn();
 }
 
 // color of selected seat
