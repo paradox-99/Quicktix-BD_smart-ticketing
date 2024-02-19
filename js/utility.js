@@ -37,6 +37,7 @@ function isTotalSeat4(seat) {
         addingSeatInfo(seat)
         addSeat(seat);
         priceCount();
+        activeCouponButton();
     }
     else
         alertChecking();
@@ -45,10 +46,6 @@ function isTotalSeat4(seat) {
 function alertChecking() {
     const Alert = document.getElementById('my_modal_1');
     Alert.showModal()
-}
-
-function closeModal() {
-    document.getElementById('alert').classList.remove('modal-open');
 }
 
 function addingSeatInfo(seat) {
@@ -65,3 +62,8 @@ function addingSeatInfo(seat) {
         </div>
     `;
 }
+
+// taking coupon code to clear error message
+document.getElementById('coupon-code').addEventListener('keyup', function(){
+    document.getElementById('wrong-coupon').classList.add('hidden');
+});

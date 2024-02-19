@@ -370,10 +370,16 @@
                             <p>Total Price</p>
                             <p>BDT - <span id="total-price">0</span></p>
                         </div>
-                        <div class="bg-white flex items-center rounded-xl mt-4 h-14">
-                            <input type="text" placeholder="Have any coupon?" class="w-56 pl-4">
+                        <div id="discounted-price" class="font_inter text-[#030712] font-medium flex justify-between mt-2">
+
+                        </div>
+                        <div class="bg-white flex items-center rounded-xl mt-4 h-14" id="coupon-div">
+                            <input type="text" placeholder="Have any coupon?" class="w-56 pl-4 focus:outline-none" id="coupon-code">
                             <button
-                                class="btn bg-[#1DD100] text-white font_inter font-semibold h-9 min-h-9 hover:bg-[#1DD100]" disabled>Apply</button>
+                                class="btn bg-[#1DD100] text-white font_inter font-semibold h-9 min-h-9 hover:bg-[#1DD100]" disabled onclick="checkCouponCode()" id="coupon-button">Apply</button>
+                        </div>
+                        <div id="wrong-coupon" class="font_inter text-center text-red-500 font-medium mt-2 hidden">
+                            <p>Coupon code is not valid!</p>
                         </div>
                         <div class="font_inter text-[#030712] font-medium flex justify-between mt-4">
                             <p>Grand Total</p>
@@ -386,7 +392,7 @@
                         <input type="text" placeholder="Enter your name"
                             class="border rounded-xl boeder-[#0307121A] mt-4 mb-6 p-5  text-[#03071266] w-full">
                         <h5 class="font-semibold">Phone Number*<span class="text-red-500">*</span></h5>
-                        <input type="text" placeholder="Enter your name"
+                        <input type="number" placeholder="Enter your name"
                             class="border rounded-xl boeder-[#0307121A] mt-4 mb-6 p-5  text-[#03071266] w-full">
                         <h5 class="font-semibold">Email ID</h5>
                         <input type="text" placeholder="Enter your name"
@@ -436,7 +442,7 @@
     <dialog id="my_modal_1" class="modal">
         <div class="modal-box">
             <h3 class="font-bold text-2xl flex font_raleway gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /> </svg>Alert</h3>
-            <p class="py-4 font_inter text-xl">You cannot select more than 4 seat.</p>
+            <p class="py-4 font_inter text-xl">You cannot select more than 4 seats.</p>
             <div class="modal-action mt-0">
                 <form method="dialog">
                     <button class="btn">Close</button>
