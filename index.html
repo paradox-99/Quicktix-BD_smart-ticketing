@@ -63,7 +63,8 @@
             </div>
         </nav>
         <!-- banner section -->
-        <section class="bg-[url('/images/banner.png')] w-full h-full lg:h-[600px] bg-no-repeat bg-contain flex flex-col justify-center items-center text-center relative mt-8">
+        <section
+            class="bg-[url('/images/banner.png')] w-full h-full lg:h-[600px] bg-no-repeat bg-contain flex flex-col justify-center items-center text-center relative mt-8">
             <div>
                 <h1 class="font_raleway lg:text-[64px] lg:leading-normal font-extrabold text-white">End-to-End Travel
                     with <br><span class="text-[#1DD100]">QuickTix BD</span></h1>
@@ -137,7 +138,9 @@
             </div>
             <!-- see all offers button -->
             <div class="navbar-end w-full text-center">
-                <a class="btn text-[#1DD100] border border-[#1DD10066] bg-[#1DD1001A] hover:bg-[#1DD10040] text-lg lg:text-xl font_raleway font-bold rounded-xl mt-10 lg:mt-16">See All Offers</a>
+                <a
+                    class="btn text-[#1DD100] border border-[#1DD10066] bg-[#1DD1001A] hover:bg-[#1DD10040] text-lg lg:text-xl font_raleway font-bold rounded-xl mt-10 lg:mt-16">See
+                    All Offers</a>
             </div>
         </section>
         <!-- ticket selection and purchase section -->
@@ -162,7 +165,8 @@
                         </div>
                         <div class="btn bg-[#1DD10026] flex flex-row gap-2 items-center">
                             <img src="images/seat-green.png" alt="" class="w-6">
-                            <p class="text-[#1DD100] font_inter text-lg font-medium"><span id="seat-left">40</span> Seats left</p>
+                            <p class="text-[#1DD100] font_inter text-lg font-medium"><span id="seat-left">40</span>
+                                Seats left</p>
                         </div>
                     </div>
                     <div class="bg-[#F7F8F8] p-8 rounded-3xl mt-5">
@@ -220,10 +224,14 @@
                             <p class="pr-8">A</p>
                             <div class="flex items-center justify-between  w-full">
                                 <div class="flex items-center justify-between gap-8 w-full">
-                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl">A1</p>
-                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl">A2</p>
-                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl">A3</p>
-                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl">A4</p>
+                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl hover:cursor-pointer" id="A1"
+                                        onclick="seatSelected('A1')">A1</p>
+                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl hover:cursor-pointer" id="A2"
+                                        onclick="seatSelected('A2')">A2</p>
+                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl hover:cursor-pointer" id="A3"
+                                        onclick="seatSelected('A3')">A3</p>
+                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl hover:cursor-pointer" id="A4"
+                                        onclick="seatSelected('A4')">A4</p>
                                 </div>
                             </div>
                         </div>
@@ -232,10 +240,14 @@
                             <p class="pr-8">B</p>
                             <div class="flex items-center justify-between gap-16 w-full">
                                 <div class="flex items-center justify-between gap-8 w-full">
-                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl">B1</p>
-                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl">B2</p>
-                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl">B3</p>
-                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl">B4</p>
+                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl hover:cursor-pointer" id="B1"
+                                        onclick="seatSelected('B1')">B1</p>
+                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl hover:cursor-pointer" id="B2"
+                                        onclick="seatSelected('B2')">B2</p>
+                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl hover:cursor-pointer" id="B3"
+                                        onclick="seatSelected('B3')">B3</p>
+                                    <p class="bg-[#F7F8F8] py-4 px-12 w-fit rounded-xl hover:cursor-pointer" id="B4"
+                                        onclick="seatSelected('B4')">B4</p>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +356,8 @@
                     <!-- ticket information -->
                     <div class="bg-[#F7F8F8] p-8 mt-6 rounded-xl">
                         <div class="font_inter text-[#030712] font-medium flex justify-between">
-                            <p>Seat <span class="bg-[#1DD100] px-2 rounded-[5px] text-xs text-white">0</span></p>
+                            <p>Seat <span class="bg-[#1DD100] px-2 rounded-[5px] text-xs text-white"
+                                    id="total-seat">0</span></p>
                             <p>Class</p>
                             <p>Price</p>
                         </div>
@@ -402,7 +415,9 @@
         <section class="flex justify-between">
             <div>
                 <h3 class="font_raleway text-4xl font-extrabold text-white">QuickTix BD</h3>
-                <p class="font-inter text-lg text-[#FFFFFFCC] mt-4">P-Ticket is a digital platform to make your <br>daily commuting better.</p>
+                <p class="font-inter text-lg text-[#FFFFFFCC] mt-4">P-Ticket is a digital platform to make your
+                    <br>daily commuting better.
+                </p>
             </div>
             <div class="text-white">
                 <h4 class="font_raleway text-xl font-semibold">Download our app</h4>
@@ -425,6 +440,23 @@
             </ul>
         </div>
     </footer>
+
+    <!-- alert section for selecting more than 4 seat -->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <h3 class="font-bold text-2xl flex font_raleway gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /> </svg>Alert</h3>
+            <p class="py-4 font_inter text-xl">You cannot select more than 4 seat.</p>
+            <div class="modal-action mt-0">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <!-- ___________alert over_____________ -->
+    <script src="js/utility.js"></script>
+    <script src="js/functionality.js"></script>
 </body>
 
 </html>
