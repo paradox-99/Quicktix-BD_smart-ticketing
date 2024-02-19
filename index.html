@@ -160,7 +160,7 @@
                             <img src="images/bus-logo.png" alt="" class="h-12">
                             <div>
                                 <h3 class="font-raleway text-[32px] font-bold font_color">Greenline Paribahan</h3>
-                                <p class="font_inter text-lg text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                <p class="font_inter text-lg text-[#03071299]">Coach-009-WEB ! <span id="seat-class">AC_Business</span>AC_Business</p>
                             </div>
                         </div>
                         <div class="btn bg-[#1DD10026] flex flex-row gap-2 items-center">
@@ -193,7 +193,7 @@
                 <img src="images/info-devider.png" alt="">
                 <div class="flex flex-col items-center justify-center pr-16">
                     <img src="images/fare.png" alt="">
-                    <h2 class="font_raleway text-[32px] font-bold font_color mt-7">550 Taka</h2>
+                    <h2 class="font_raleway text-[32px] font-bold font_color mt-7"><!-- here you can change ticket price --><span id="ticket-price">550</span> Taka</h2>
                     <h4 class="font_raleway text-2xl font-semibold text-[#03071299]">Per Seat</h4>
                 </div>
             </div>
@@ -362,17 +362,8 @@
                             <p>Price</p>
                         </div>
                         <div class="border border-[#0307124D] border-dashed my-6"></div>
-                        <div>
-                            <div class="font_inter text-[#03071299] flex justify-between">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
-                            <!-- <div class="font_inter text-[#03071299] flex justify-between">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div> -->
+                        <div id="selected-ticket-info">
+                            
                         </div>
                         <div class="border border-[#0307124D] border-dashed my-6"></div>
                         <div class="font_inter text-[#030712] font-medium flex justify-between">
@@ -448,7 +439,6 @@
             <p class="py-4 font_inter text-xl">You cannot select more than 4 seat.</p>
             <div class="modal-action mt-0">
                 <form method="dialog">
-                    <!-- if there is a button in form, it will close the modal -->
                     <button class="btn">Close</button>
                 </form>
             </div>

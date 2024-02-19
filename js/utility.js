@@ -34,6 +34,7 @@ function isTotalSeat4(seat){
         selectedColor(seat);
         seatLeft();
         totalSeatSelected();
+        addingSeatInfo(seat)
         addSeat(seat);
     }
     else
@@ -47,4 +48,19 @@ function alertChecking(){
 
 function closeModal(){
     document.getElementById('alert').classList.remove('modal-open');
+}
+
+function addingSeatInfo(seat){
+    const ticketPrice = document.getElementById('ticket-price').innerText;
+    let price = parseInt(ticketPrice); // it will take given price in the ticket information section
+    const seatClass = document.getElementById('seat-class').innerText; // it will take ticket class in the ticket information section
+
+    const ticketInformation = document.getElementById('selected-ticket-info');
+    ticketInformation.innerHTML += `
+        <div class="font_inter text-[#03071299] flex justify-between">
+            <p>${seat}</p>
+            <p>${seatClass}</p>
+            <p>${price}</p>
+        </div>
+    `;
 }
