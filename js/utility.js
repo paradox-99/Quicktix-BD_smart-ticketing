@@ -44,8 +44,9 @@ function isTotalSeat4(seat) {
         alertChecking();
 }
 
+// function to give an alert for selecting more than 4 seats
 function alertChecking() {
-    const Alert = document.getElementById('my_modal_1');
+    const Alert = document.getElementById('alert-modal');
     Alert.showModal()
 }
 
@@ -68,3 +69,8 @@ function addingSeatInfo(seat) {
 document.getElementById('coupon-code').addEventListener('keyup', function(){
     document.getElementById('wrong-coupon').classList.add('hidden');
 });
+
+function showSuccessMessage(){
+    const Alert = document.getElementById('success-modal');
+    Alert.showModal();
+}
