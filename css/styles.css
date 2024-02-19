@@ -14,3 +14,15 @@
 .font_color{
     color: #030712;
 }
+
+.sec_background{
+    background: url('../images/banner.png');
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 16px;
+    margin-top: 50px;
+}

@@ -12,13 +12,25 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- css file -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- title -->
     <title>QuickTix BD</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'background': "url('../images/banner.png')",
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -62,20 +74,19 @@
                 </div>
             </div>
         </nav>
+
         <!-- banner section -->
-        <section
-            class="bg-[url('images/banner.png')] w-full h-full lg:h-[600px] bg-no-repeat bg-contain flex flex-col justify-center items-center text-center relative mt-8">
-            <div>
-                <h1 class="font_raleway lg:text-[64px] lg:leading-normal font-extrabold text-white">End-to-End Travel
-                    with <br><span class="text-[#1DD100]">QuickTix BD</span></h1>
-                <p class="font_inter text-lg text-white mt-4 lg:w-[690px] ">Yes, you can run unit tests and view the
-                    results directly within the app. The integrated testing features allow for a streamlined .</p>
-                <a href="#ticket-section"
-                    class="btn bg-[#1DD100] border-none rounded-xl mt-8 font_raleway text-lg lg:text-xl font_color font-bold hover:bg-[#1DD100]">Buy
+        <div
+            class="bg-background lg:h-[600px] bg-no-repeat bg-contain flex flex-col justify-center items-center text-center relative mt-5 lg:mt-8">
+            <div class="">
+                <h1 class="font_raleway text-xl lg:text-[64px] lg:leading-normal font-extrabold text-white">End-to-End Travel
+                    with <br><span class="text-[#1DD100]">Greenline Paribahan</span></h1>
+                <p class="font_inter lg:text-lg text-white lg:mt-4 lg:w-[690px] ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for.</p>
+                <a href="#ticket-section" class="btn bg-[#1DD100] border-none rounded-xl mt-3 lg:mt-8 font_raleway text-lg lg:text-xl font_color font-bold hover:bg-[#1DD100]">Buy
                     Tickets</a>
             </div>
             <!-- banner section bottom tiles -->
-            <div class="flex flex-col lg:flex-row gap-4 lg:gap-6 absolute -bottom-[250px] lg:-bottom-14">
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-6 absolute -bottom-[320px] lg:-bottom-14">
                 <div
                     class="bg-white pl-3 pr-4 py-3 lg:pl-10 lg:pr-12 lg:py-8 rounded-3xl border-b-[3px] border-[#1DD100] flex flex-row">
                     <img src="images/people.png" alt="">
@@ -101,38 +112,38 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </header>
     <!-- main section -->
     <main>
         <!-- Best offers for you section -->
-        <section class="mt-72 lg:mt-36 px-5 lg:px-[135px]">
+        <section class="mt-[350px] lg:mt-36 px-5 lg:px-[135px]">
             <div>
                 <h1 class="text-center font_raleway text-3xl lg:text-[40px] font-bold">Best offers for you</h1>
             </div>
             <div class="mt-8 lg:mt-12 flex flex-col lg:flex-row gap-4 lg:gap-6">
-                <div class="bg-[#FFBF0F] w-fit px-3 lg:px-[52px] rounded-3xl flex  items-center">
+                <div class="bg-[#FFBF0F] w-full px-3 lg:px-[52px] rounded-3xl flex  items-center">
                     <div class="font_inter text-[#030712CC]">
                         <h2 class="text-[28px] lg:text-[40px] font-black">15% OFF</h2>
-                        <p class="text-lg lg:text-xl font-semibold">on your next purchase</p>
-                        <p class="lg:text-lg font-medium text-[#03071280]">use by January 2024</p>
+                        <p class="lg:text-xl font-semibold">on your next purchase</p>
+                        <p class="text-sm lg:text-lg font-medium text-[#03071280]">use by January 2024</p>
                     </div>
                     <img src="images/cupon-devider.png" alt="" class="lg:pl-[52px] lg:pr-6 h-44">
                     <div class="font_raleway text-center">
-                        <h2 class="text-2xl lg:text-[32px] font-bold font_color">NEW15</h2>
-                        <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
+                        <h2 class="text-xl lg:text-[32px] font-bold font_color">NEW15</h2>
+                        <p class="font-medium text-[#03071266]">Coupon Code</p>
                     </div>
                 </div>
-                <div class="bg-[#F78C9C] w-fit px-3 lg:px-[52px] rounded-3xl flex  items-center">
+                <div class="bg-[#F78C9C] w-full px-3 lg:px-[52px] rounded-3xl flex  items-center">
                     <div class="font_inter text-[#030712CC]">
                         <h2 class="text-[28px] lg:text-[40px] font-black">20% OFF</h2>
-                        <p class="text-lg lg:text-xl font-semibold">on your next purchase</p>
-                        <p class="lg:text-lg font-medium text-[#03071280]">use by January 2024</p>
+                        <p class="lg:text-xl font-semibold">on your next purchase</p>
+                        <p class="text-sm lg:text-lg font-medium text-[#03071280]">use by January 2024</p>
                     </div>
                     <img src="images/cupon-devider.png" alt="" class="lg:pl-[52px] lg:pr-6 h-44">
                     <div class="font_raleway text-center">
-                        <h2 class="text-2xl lg:text-[32px] font-bold font_color text-left lg:text-center">Couple 20</h2>
-                        <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
+                        <h2 class="text-xl lg:text-[32px] font-bold font_color text-center">Couple 20</h2>
+                        <p class="font-medium text-[#03071266]">Coupon Code</p>
                     </div>
                 </div>
             </div>
@@ -144,61 +155,72 @@
             </div>
         </section>
         <!-- ticket selection and purchase section -->
-        <section class="mt-[120px] rounded-t-[88px] pb-[120px] border-t-2 border-[#1DD100] bg-[#F7F8F8]"
+        <section
+            class="mt-14 lg:mt-[120px] rounded-t-[50px] lg:rounded-t-[88px] pb-16 lg:pb-[120px] border-t-2 border-[#1DD100] bg-[#F7F8F8]"
             id="ticket-section">
             <!-- title -->
-            <div class="text-center mt-[120px] flex flex-col justify-center items-center">
+            <div class="text-center mt-14 lg:mt-[120px] flex flex-col justify-center items-center">
                 <h3 class="font-raleway text-[40px] font-bold font_color">QuickTix BD</h3>
-                <p class="font-inter text-lg w-[735px] mt-6 text-[#03071299]">Yes, you can run unit tests and view the
-                    results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <p class="font-inter text-lg lg:w-[735px] mt-4 lg:mt-6 text-[#03071299]">Yes, you can run unit tests and
+                    view the results directly within the app. The integrated testing features allow for a streamlined .
+                </p>
             </div>
             <!-- journey details -->
-            <div class="mx-5 mt-8 lg:mx-[135px] lg:mt-12 bg-white flex flex-row justify-between rounded-3xl">
-                <div class="flex flex-col flex-1 p-8 ">
-                    <div class="flex flex-row justify-between items-center">
-                        <div class="flex flex-row items-center gap-4">
-                            <img src="images/bus-logo.png" alt="" class="h-12">
+            <div
+                class="mx-5 mt-8 lg:mx-[135px] lg:mt-12 bg-white flex flex-col lg:flex-row justify-between rounded-3xl">
+                <div class="flex flex-1 flex-col p-2 lg:p-8">
+                    <div class="flex justify-between items-center">
+                        <div class="flex flex-row items-center gap-2 lg:gap-4">
+                            <img src="images/bus-logo.png" alt="" class="h-6 lg:h-12">
                             <div>
-                                <h3 class="font-raleway text-[32px] font-bold font_color">Greenline Paribahan</h3>
-                                <p class="font_inter text-lg text-[#03071299]">Coach-009-WEB ! <span id="seat-class">AC_Business</span>AC_Business</p>
+                                <h3 class="font-raleway text-xl lg:text-[32px] font-bold font_color">Greenline Paribahan
+                                </h3>
+                                <p class="font_inter text-sm lg:text-lg text-[#03071299]">Coach-009-WEB ! <span
+                                        id="seat-class">AC_Business</span>AC_Business</p>
                             </div>
                         </div>
-                        <div class="btn bg-[#1DD10026] flex flex-row gap-2 items-center">
-                            <img src="images/seat-green.png" alt="" class="w-6">
-                            <p class="text-[#1DD100] font_inter text-lg font-medium"><span id="seat-left">40</span>
+                        <div
+                            class="btn bg-[#1DD10026] flex flex-row gap-1 lg:gap-2 items-center h-8 min-h-8 p-2 lg:h-full lg:min-h-full lg:p-4">
+                            <img src="images/seat-green.png" alt="" class="w-4 lg:w-6">
+                            <p class="text-[#1DD100] font_inter lg:text-lg font-medium"><span id="seat-left">40</span>
                                 Seats left</p>
                         </div>
                     </div>
-                    <div class="bg-[#F7F8F8] p-8 rounded-3xl mt-5">
+                    <div class="bg-[#F7F8F8] p-4 lg:p-8 rounded-3xl mt-5">
                         <div class="flex flex-rox justify-between items-center mb-6">
                             <p>Route</p>
                             <p>Dhaka - Sylhet</p>
                         </div>
-                        <div class="border border-[#0307124D] border-dashed my-6"></div>
+                        <div class="border border-[#0307124D] border-dashed my-4 lg:my-6"></div>
                         <div class="flex flex-rox justify-between items-center my-6">
                             <p>Departure Time</p>
                             <p>9:00 PM</p>
                         </div>
-                        <div class="border border-[#0307124D] border-dashed my-6"></div>
-                        <div class="flex flex-row justify-between mt-6">
-                            <p class="bg-[#0307120D] p-5 rounded-xl font_inter font-medium text-center">Boarding Point -
+                        <div class="border border-[#0307124D] border-dashed my-4 lg:my-6"></div>
+                        <div class="flex flex-row flex-wrap justify-center lg:justify-between gap-2 mt-4 lg:mt-6">
+                            <p class="bg-[#0307120D] p-2 lg:p-5 text-sm rounded-xl font_inter font-medium text-center">
+                                Boarding Point -
                                 Laxmipur</p>
-                            <p class="bg-[#0307120D] p-5 rounded-xl font_inter font-medium text-center">Dropping Point -
+                            <p class="bg-[#0307120D] p-2 lg:p-5 text-sm rounded-xl font_inter font-medium text-center">
+                                Dropping Point -
                                 Bogura</p>
-                            <p class="bg-[#0307120D] p-5 rounded-xl font_inter font-medium  text-center">Est. Time - 11
+                            <p class="bg-[#0307120D] p-2 lg:p-5 text-sm rounded-xl font_inter font-medium  text-center">
+                                Est. Time - 11
                                 Hour</p>
                         </div>
                     </div>
                 </div>
-                <img src="images/info-devider.png" alt="">
-                <div class="flex flex-col items-center justify-center pr-16">
+                <img src="images/info-devider.png" alt="" class="hidden lg:flex">
+                <div class="flex flex-col items-center justify-center lg:pr-16 py-4">
                     <img src="images/fare.png" alt="">
-                    <h2 class="font_raleway text-[32px] font-bold font_color mt-7"><!-- here you can change ticket price --><span id="ticket-price">550</span> Taka</h2>
+                    <h2 class="font_raleway text-[32px] font-bold font_color mt-7">
+                        <!-- here you can change ticket price --><span id="ticket-price">550</span> Taka</h2>
                     <h4 class="font_raleway text-2xl font-semibold text-[#03071299]">Per Seat</h4>
                 </div>
             </div>
             <!-- ticket and passenger information -->
-            <div class="mx-5 mt-7 p-8 lg:mx-[135px] lg:mt-12 bg-white flex flex-row justify-between rounded-3xl">
+            <div
+                class="mx-5 mt-7 p-4 lg:p-8 lg:mx-[135px] lg:mt-12 bg-white flex flex-col lg:flex-row justify-between rounded-3xl">
                 <div class="w-full">
                     <h3 class=" font_raleway text-2xl font-semibold font_color mb-6">Select Your Seat</h3>
                     <div class="border border-[#0307124D] border-dashed my-6"></div>
@@ -214,11 +236,12 @@
                     </div>
                     <div class="border border-[#0307124D] border-dashed my-6"></div>
                     <div class="flex justify-end mt-6">
-                        <img src="images/Steering.svg" alt="" class=" bg-[#0307121A]  py-4 px-12 rounded-xl">
+                        <img src="images/Steering.svg" alt=""
+                            class=" bg-[#0307121A] py-3 lg:py-4 px-6 lg:px-12 rounded-xl">
                     </div>
                     <!-- seat section -->
-                    <div class="font_inter text-lg font-medium text-[#03071280] mt-6  flex gap-10">
-                        <div class="grid grid-cols-1 grid-rows-10 gap-y-10 pt-4">
+                    <div class="font_inter text-lg font-medium text-[#03071280] mt-7  flex gap-2 lg:gap-10">
+                        <div class="grid grid-cols-1 grid-rows-10 gap-y-5 lg:gap-y-10 pt-2 lg:pt-4">
                             <p>A</p>
                             <p>B</p>
                             <p>C</p>
@@ -231,59 +254,99 @@
                             <p>J</p>
                         </div>
                         <div class="flex justify-between w-full">
-                        <div class="grid grid-cols-2 grid-rows-10 gap-8">
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="A1" onclick="seatSelected('A1')">A1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="A2" onclick="seatSelected('A2')">A2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="B1" onclick="seatSelected('B1')">B1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="B2" onclick="seatSelected('B2')">B2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="C1" onclick="seatSelected('C1')">C1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="C2" onclick="seatSelected('C2')">C2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="D1" onclick="seatSelected('D1')">D1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="D2" onclick="seatSelected('D2')">D2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="E1" onclick="seatSelected('E1')">E1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="E2" onclick="seatSelected('E2')">E2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="F1" onclick="seatSelected('F1')">F1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="F2" onclick="seatSelected('F2')">F2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="G1" onclick="seatSelected('G1')">G1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="G2" onclick="seatSelected('G2')">G2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="H1" onclick="seatSelected('H1')">H1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="H2" onclick="seatSelected('H2')">H2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="I1" onclick="seatSelected('I1')">I1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="I2" onclick="seatSelected('I2')">I2</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="J1" onclick="seatSelected('J1')">J1</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="J2" onclick="seatSelected('J2')">J2</p>
+                            <div class="grid grid-cols-2 grid-rows-10 gap-2 lg:gap-8">
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="A1" onclick="seatSelected('A1')">A1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="A2" onclick="seatSelected('A2')">A2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="B1" onclick="seatSelected('B1')">B1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="B2" onclick="seatSelected('B2')">B2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="C1" onclick="seatSelected('C1')">C1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="C2" onclick="seatSelected('C2')">C2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="D1" onclick="seatSelected('D1')">D1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="D2" onclick="seatSelected('D2')">D2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="E1" onclick="seatSelected('E1')">E1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="E2" onclick="seatSelected('E2')">E2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="F1" onclick="seatSelected('F1')">F1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="F2" onclick="seatSelected('F2')">F2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="G1" onclick="seatSelected('G1')">G1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="G2" onclick="seatSelected('G2')">G2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="H1" onclick="seatSelected('H1')">H1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="H2" onclick="seatSelected('H2')">H2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="I1" onclick="seatSelected('I1')">I1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="I2" onclick="seatSelected('I2')">I2</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="J1" onclick="seatSelected('J1')">J1</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="J2" onclick="seatSelected('J2')">J2</p>
+                            </div>
+                            <div class="grid grid-cols-2 grid-rows-10 gap-2 lg:gap-8">
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="A3" onclick="seatSelected('A3')">A3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="A4" onclick="seatSelected('A4')">A4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="B3" onclick="seatSelected('B3')">B3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="B4" onclick="seatSelected('B4')">B4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="C3" onclick="seatSelected('C3')">C3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="C4" onclick="seatSelected('C4')">C4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="D3" onclick="seatSelected('D3')">D3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="D4" onclick="seatSelected('D4')">D4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="E3" onclick="seatSelected('E3')">E3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="E4" onclick="seatSelected('E4')">E4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="F3" onclick="seatSelected('F3')">F3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="F4" onclick="seatSelected('F4')">F4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="G3" onclick="seatSelected('G3')">G3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="H3" onclick="seatSelected('H3')">H3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="G4" onclick="seatSelected('G4')">G4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="H4" onclick="seatSelected('H4')">H4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="I3" onclick="seatSelected('I3')">I3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="I4" onclick="seatSelected('I4')">I4</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="J3" onclick="seatSelected('J3')">J3</p>
+                                <p class="bg-[#F7F8F8] py-3 lg:py-4 px-6 lg:px-12 w-full rounded-xl hover:cursor-pointer"
+                                    id="J4" onclick="seatSelected('J4')">J4</p>
+                            </div>
                         </div>
-                        <div class="grid grid-cols-2 grid-rows-10 gap-8">
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="A3" onclick="seatSelected('A3')">A3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="A4" onclick="seatSelected('A4')">A4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="B3" onclick="seatSelected('B3')">B3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="B4" onclick="seatSelected('B4')">B4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="C3" onclick="seatSelected('C3')">C3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="C4" onclick="seatSelected('C4')">C4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="D3" onclick="seatSelected('D3')">D3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="D4" onclick="seatSelected('D4')">D4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="E3" onclick="seatSelected('E3')">E3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="E4" onclick="seatSelected('E4')">E4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="F3" onclick="seatSelected('F3')">F3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="F4" onclick="seatSelected('F4')">F4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="G3" onclick="seatSelected('G3')">G3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="H3" onclick="seatSelected('H3')">H3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="G4" onclick="seatSelected('G4')">G4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="H4" onclick="seatSelected('H4')">H4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="I3" onclick="seatSelected('I3')">I3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="I4" onclick="seatSelected('I4')">I4</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="J3" onclick="seatSelected('J3')">J3</p>
-                            <p class="bg-[#F7F8F8] py-4 px-12 w-full rounded-xl hover:cursor-pointer" id="J4" onclick="seatSelected('J4')">J4</p>
-                        </div>
-                    </div>
                     </div>
                 </div>
-                <div class="h-[984px] border-[1.5px] border-dashed mx-8 border-[#0307124D]"></div>
-                <div class="w-[600px]">
+                <div class="h-[1133px] border-[1.5px] border-dashed mx-8 border-[#0307124D] hidden lg:flex"></div>
+                <div class="pt-10 lg:pt-0 lg:w-[600px]">
                     <h3 class=" font_raleway text-2xl font-semibold font_color mb-6">Select Your Seat</h3>
                     <div class="border border-[#0307124D] border-dashed my-6"></div>
                     <!-- ticket information -->
-                    <div class="bg-[#F7F8F8] p-8 mt-6 rounded-xl">
+                    <div class="bg-[#F7F8F8] p-4 lg:p-8 mt-6 rounded-xl">
                         <div class="font_inter text-[#030712] font-medium flex justify-between">
                             <p>Seat <span class="bg-[#1DD100] px-2 rounded-[5px] text-xs text-white"
                                     id="total-seat">0</span></p>
@@ -292,20 +355,23 @@
                         </div>
                         <div class="border border-[#0307124D] border-dashed my-6"></div>
                         <div id="selected-ticket-info">
-                            
+
                         </div>
                         <div class="border border-[#0307124D] border-dashed my-6"></div>
                         <div class="font_inter text-[#030712] font-medium flex justify-between">
                             <p>Total Price</p>
                             <p>BDT - <span id="total-price">0</span></p>
                         </div>
-                        <div id="discounted-price" class="font_inter text-[#030712] font-medium flex justify-between mt-2">
+                        <div id="discounted-price"
+                            class="font_inter text-[#030712] font-medium flex justify-between mt-2">
 
                         </div>
                         <div class="bg-white flex items-center rounded-xl mt-4 h-14" id="coupon-div">
-                            <input type="text" placeholder="Have any coupon?" class="w-56 pl-4 focus:outline-none" id="coupon-code">
+                            <input type="text" placeholder="Have any coupon?" class="w-56 pl-4 focus:outline-none"
+                                id="coupon-code">
                             <button
-                                class="btn bg-[#1DD100] text-white font_inter font-semibold h-9 min-h-9 hover:bg-[#1DD100]" disabled onclick="checkCouponCode()" id="coupon-button">Apply</button>
+                                class="btn bg-[#1DD100] text-white font_inter font-semibold h-9 min-h-9 hover:bg-[#1DD100]"
+                                disabled onclick="checkCouponCode()" id="coupon-button">Apply</button>
                         </div>
                         <div id="wrong-coupon" class="font_inter text-center text-red-500 font-medium mt-2 hidden">
                             <p>Coupon code is not valid!</p>
@@ -319,15 +385,18 @@
                     <div class="font_inter font_color my-6">
                         <h5 class="font-semibold">Passenger Name<span class="text-red-500">*</span></h5>
                         <input type="text" placeholder="Enter your name"
-                            class="border rounded-xl boeder-[#0307121A] mt-4 mb-6 p-5  text-[#03071266] w-full">
+                            class="border rounded-xl boeder-[#0307121A] mt-4 mb-6 p-3 lg:p-5  text-[#03071266] w-full">
                         <h5 class="font-semibold">Phone Number<span class="text-red-500">*</span></h5>
-                        <input type="number" placeholder="Enter your name"
-                            class="border rounded-xl boeder-[#0307121A] mt-4 mb-6 p-5  text-[#03071266] w-full" id="phone">
+                        <input type="number" placeholder="Enter your phone number(minimum 4 digit)"
+                            class="border rounded-xl boeder-[#0307121A] mt-4 mb-6 p-3 lg:p-5  text-[#03071266] w-full"
+                            id="phone">
                         <h5 class="font-semibold">Email ID</h5>
-                        <input type="email" placeholder="Enter your name"
-                            class="border rounded-xl boeder-[#0307121A] mt-4 mb-6 p-5  text-[#03071266] w-full">
+                        <input type="email" placeholder="Enter your email id"
+                            class="border rounded-xl boeder-[#0307121A] mt-4 mb-6 p-3 lg:p-5  text-[#03071266] w-full">
                     </div>
-                    <button class="btn w-full bg-[#1DD100] text-white text-xl font_raleway font-extrabold hover:bg-[#1DD100]" id="next-btn" disabled onclick="showSuccessMessage()">Next</button>
+                    <button
+                        class="btn w-full bg-[#1DD100] text-white text-xl font_raleway font-extrabold hover:bg-[#1DD100]"
+                        id="next-btn" disabled onclick="showSuccessMessage()">Next</button>
                     <div class="text-[#03071299] font_inter flex justify-between underline mt-6">
                         <a href="">Terms and Conditions</a>
                         <a href="">Cancellation Policy</a>
@@ -336,17 +405,17 @@
             </div>
         </section>
     </main>
-    <footer class="px-5 lg:px-[135px] py-[120px] bg-[#030712]">
-        <section class="flex justify-between">
+    <footer class="px-5 lg:px-[135px] py-14 lg:py-[120px] bg-[#030712]">
+        <section class="flex flex-col lg:flex-row gap-5 items-center text-center justify-between">
             <div>
-                <h3 class="font_raleway text-4xl font-extrabold text-white">QuickTix BD</h3>
+                <h3 class="font_raleway text-3xl lg:text-4xl font-extrabold text-white">QuickTix BD</h3>
                 <p class="font-inter text-lg text-[#FFFFFFCC] mt-4">P-Ticket is a digital platform to make your
                     <br>daily commuting better.
                 </p>
             </div>
             <div class="text-white">
                 <h4 class="font_raleway text-xl font-semibold">Download our app</h4>
-                <div class="flex items-center mt-5 gap-3">
+                <div class="flex items-center mt-2 lg:mt-5 gap-3">
                     <a href=""><img src="images/playstore.png" alt="" class="w-8 h-9"></a>
                     <div class="font_inter font-medium">
                         <p>GET IT ON</p>
@@ -356,9 +425,9 @@
             </div>
         </section>
         <div class="border border-[#FFFFFF4D] border-dashed mt-12 mb-8"></div>
-        <div class="flex justify-between font_inter">
+        <div class="flex justify-between flex-col lg:flex-row text-center gap-6 font_inter">
             <p class="text-[#FFFFFFB3]">@all rights reserved, P-Ticket services limited.2024</p>
-            <ul class="flex gap-x-8 text-white font-medium">
+            <ul class="flex gap-x-8 flex-col lg:flex-row gap-y-5 text-white font-medium">
                 <li><a href="">Terms & condition</a></li>
                 <li><a href="">Return & refund policy</a></li>
                 <li><a href="">Privacy policy</a></li>
@@ -369,7 +438,11 @@
     <!-- alert section for selecting more than 4 seat -->
     <dialog id="alert-modal" class="modal">
         <div class="modal-box">
-            <h3 class="font-bold text-2xl flex font_raleway gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /> </svg>Alert</h3>
+            <h3 class="font-bold text-2xl flex font_raleway gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                </svg>Alert</h3>
             <p class="py-4 font_inter text-xl">You cannot select more than 4 seats.</p>
             <div class="modal-action mt-0">
                 <form method="dialog">
@@ -385,20 +458,24 @@
     <dialog id="success-modal" class="modal">
         <div class="modal-box max-w-fit w-fit p-0">
             <div>
-                <div class="w-[720px] h-[480px] rounded-2xl flex flex-col items-center justify-center font_roboto text-center">
+                <div
+                    class="w-[380px] lg:w-[720px] lg:h-[480px] p-3 rounded-2xl flex flex-col items-center justify-center font_roboto text-center">
                     <img src="images/success.png" alt="">
-                    <h3 class="text-2xl font-bold text-[#27AE60] my-9">SUCCESS</h3>
-                    <p class="text-xl font-medium text-[#4A4A4A]">Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you. </p>
-                    <p class="text-[#4A4A4A] text-xl font-light mt-3 mb-5">Shortly you will find a confirmation in your email.</p>
+                    <h3 class="text-xl lg:text-2xl font-bold text-[#27AE60] my-9">SUCCESS</h3>
+                    <p class="lg:text-xl font-medium text-[#4A4A4A]">Thank you for Booking Our Bus Seats. <br> We are
+                        working hard to find the best service and deals for you. </p>
+                    <p class="text-[#4A4A4A] lg:text-xl font-light mt-3 mb-5">Shortly you will find a confirmation in
+                        your email.</p>
                     <!-- <button class="btn px-[100px] bg-[#27AE60] hover:bg-[#27AE60] rounded-[32px] text-xl font-semibold text-white">Continue</button> -->
                     <div class="modal-action mt-0">
                         <form method="dialog">
-                            <button class="btn px-[100px] bg-[#27AE60] hover:bg-[#27AE60] rounded-[32px] text-xl font-semibold text-white">Continue</button>
+                            <button
+                                class="btn px-[100px] bg-[#27AE60] hover:bg-[#27AE60] rounded-[32px] text-xl font-semibold text-white">Continue</button>
                         </form>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </dialog>
     <!-- ___________alert over_____________ -->

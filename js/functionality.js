@@ -73,7 +73,7 @@ function checkCouponCode(){
         discount = gdPrice * 0.20;
         price -= (gdPrice * 0.20);
         document.getElementById('discounted-price').innerHTML =`
-        <p>Discount</p>
+        <p>Discount Price</p>
         <p>BDT -  ${discount}</p>
     `;
     }
